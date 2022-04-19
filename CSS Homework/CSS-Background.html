@@ -6,29 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Background lab</title>
     <style>
-        .imgbox {
-            width: 400px;
-            height: 400px;
-            outline: 1px dashed red;
-            /* overflow: hidden; */
-            text-align: center;
-        }
-        .imgbox img {
-            width: 90%;
-        }
-        .box1 {
-            background-image: url(./pic/bmw-small.jpg);
-            width: 300px;
-            height: 300px;
+        div[class^=box] {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            background-image: url(./pic/porsche-large.jpg);
         }
     </style>
 </head>
 <body>
-    <div class="imgbox">
-        <img src="pic/autoPicSmall.jpg" alt="">
+    <img src="./pic/bmw-large.jpg" style="width: 200px;" alt="">
+    <div class="row1">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
     </div>
-    <div class="box1">
-
+    <div class="row2">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <div class="row3">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
     </div>
 </body>
 </html>
