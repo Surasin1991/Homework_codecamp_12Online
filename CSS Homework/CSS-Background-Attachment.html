@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Attachment Lab</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+        .box {
+            background-image: url(https://picsum.photos/id/65/800);
+            background-attachment: fixed;
+            color: deeppink;
+            width: 800px;
+            height: 200px;
+            margin-top: 600px;
+        }
+        .box2 {
+            background-image: url(https://picsum.photos/id/65/800);
+            /* background-attachment: fixed; */
+            color: deeppink;
+            width: 800px;
+            height: 200px;
+            background-position: center bottom;
+        }
+        .picbox {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .picbox img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>TEST Picture background in HTML Body</h2>
+    <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nobis totam, modi non quidem itaque recusandae consequatur. Nihil iste culpa veniam, assumenda voluptatum, rerum temporibus repellat error maxime facilis accusamus quasi officia. Harum ex fuga fugit ipsa tempora. Aliquam numquam facere molestiae impedit quaerat labore reprehenderit placeat rerum debitis. Quibusdam sint magni sed quidem cupiditate quae eligendi error dolores quia, assumenda iusto reiciendis saepe voluptatum nisi et iure amet fugit eum repellat tempora! Molestiae deleniti autem quas, laborum impedit eligendi.</div>
+    <div class="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ex provident expedita. Unde ipsa aliquam culpa omnis, quas minus nisi maxime sed voluptatem tempore quibusdam nobis, dolore, mollitia sunt! Necessitatibus.</div>
+    <hr>
+    <!-- <div class="picbox">
+        <img src="https://picsum.photos/id/65/800" alt="">
+    </div> -->
+</body>
+</html>
