@@ -16,19 +16,29 @@
         outline: 1px dashed red;
         display: inline-block;
     }
-    .thebox {
-        background: #abc5;
+    .box2 {
+        background: #1af;
         position: sticky;
-        top: 200px;
-        left: 200px;
+        top: 0px;
+        left: 240px;
+        z-index: -1;
+    }
+    .box3 {
+        position: sticky;
+        background-color: #ab1;
+        z-index: -2;
+    }
+    p {
+        position: relative;
+        z-index: -3;
     }
 </style>
 <body>
     <h2>Header</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem nam reprehenderit necessitatibus beatae, dolorem provident nihil saepe aliquid officiis eligendi cumque inventore mollitia atque maxime sapiente cum quaerat, dicta distinctio!</p>
     <div>Box1</div>
-    <div class="thebox">Box2</div>
-    <div>Box3</div>
+    <div class="box2">Box2</div>
+    <div class="box3">Box3</div>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt libero voluptatem ipsum ut? Veritatis dolorum velit iure quae distinctio cumque ab doloribus temporibus possimus, quam vero accusantium totam, deleniti atque commodi minima inventore quod? Reprehenderit labore officiis minus dolores natus pariatur nihil nesciunt similique quod ex ipsam veritatis incidunt eius non explicabo, magni sit veniam sint autem beatae vero. Esse enim aliquid nihil sint unde harum, ratione vero qui, eum veniam corporis repellendus voluptatibus incidunt numquam voluptate deserunt adipisci voluptatem?</p>
 </body>
 </html>
