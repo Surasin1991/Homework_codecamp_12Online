@@ -4,28 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css-flex-dummy</title>
+    <title>css-flex-lab-01</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        html {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        body {
+            max-width: 1200px;
+            margin: auto;
         }
         header {
-            background-color: red;
+            background-color: rgb(91, 91, 199, 0.8);
             height: 10vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        .navigation {
+            display: flex;
+            flex-shrink: 1;
+            list-style: none;
+            margin: 0; 
+            background: deepskyblue;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            display: block;
+            padding: 0.5em;
+            color: white;
+        }
+
+        .navigation a:hover {
+            background: #1565C0;
         }
         main {
             background-color: teal;
+            background-image: url(https://picsum.photos/id/1015/1000);
             height: 80vh;
             display: flex;
         }
         main > * {
-            outline: 1px dashed lime;
+            /* outline: 1px dashed lime; */
             flex: 1;
+        }
+        .main-l {
+            background-color: rgba(122, 122, 191, 0.473);
+        }
+        .main-r {
+            background-color: rgba(122, 122, 191, 0.473);
         }
         .main-c {
             flex-grow: 4;
@@ -33,23 +62,33 @@
             display: flex;
             flex-flow: column;
             justify-content: center;
+            color: rgb(23, 4, 86);
+            text-shadow: 0.3px 1.5px #82f19c;
         }
+    
         footer {
-            background-color: tomato;
+            background-color: rgb(91, 91, 199, 0.8);
             height: 10vh;
         }
 
     </style>
 </head>
 <body>
-    <header>Header</header>
+    <header>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
     <main>
-        <div class="main-l">Left</div>
+        <div class="main-l"></div>
         <div class="main-c">
             <h1>Title</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, natus. Non voluptatum voluptas sit similique ipsa libero tempora cupiditate perferendis impedit! Repellat ducimus omnis soluta.</p>
         </div>
-        <div class="main-r">Right</div>
+        <div class="main-r"></div>
     </main>
     <footer>Footer</footer>
 </body>
