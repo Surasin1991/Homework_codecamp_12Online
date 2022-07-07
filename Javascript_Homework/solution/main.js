@@ -672,12 +672,121 @@
 
 // for (let i = 0;)
 
-for (let i = 0; i <= 10; i++) {
-  for (let j = 0) {
+// let acc = "";
+// for (let i = 0; i < 4; i++) {
+//   for (let j = 0; j < 4; j++) {
+//     if (i <= j) {
+//       acc += "*";
+//     } else {
+//       acc += " ";
+//     }
+//   }
+//   acc += "\n";
+// }
+// console.log(acc);
+
+// let acc = "";
+// for (let i = 2; i <= 12; i++) {
+//   for (let j = 1; j <= 12; j++) {
+//     acc += `${i} x ${j} = ${i * j}\n`;
+//   }
+//   acc += "\n";
+// }
+// console.log(acc);
+
+// let input = prompt("Enter number");
+// let sum = 0;
+// let count = 0;
+// while (!(input === "0" || input === "" || input === null)) {
+//   sum += +input;
+//   count++;
+//   input = prompt("Enter number");
+// }
+
+// console.log(sum);
+// console.log(sum / count);
+
+// function isPrime(number) {
+//   for (let i = 2; i <= number - 1; i++) {
+//     if (number % i === 0) {
+//       // console.log(i);
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// // console.log(isPrime(11111));
+
+// for (let i = 2; i <= 100; i++) {
+//   if (isPrime(i)) {
+//     console.log(i);
+//   }
+// }
+
+// let user = prompt("Enter username : ") || "Guest";
+// if (user === "codecamp") {
+//   let password = prompt("Enter password : ");
+//   if (password !== "123456") {
+//     alert("Wrong password");
+//   }
+// } else {
+//   user = "guest";
+// }
+
+// alert(user);
+
+// function sayHelloUser(username) {
+//   alert(`Hello ${username}`);
+// }
+// const user = prompt("Enter user");
+// sayHelloUser(user);
+
+// function multiply(num1, num2) {
+//   return num1 * num2;
+// }
+
+// function min(num1, num2) {
+//   // return num1 > num2 ? num2 : num1;
+//   if (num1 > num2) return num2;
+//   return num1;
+// }
+
+// function login(username, password) {
+//   if (username === "admin" && password === "P@ssw0rd") {
+//     console.log("Good");
+//   } else {
+//     console.log("Bad");
+//   }
+// }
+// username = prompt("Enter username : ");
+// password = prompt("Enter password : ");
+// login(username, password);
+
+// function checkAge(age) {
+//   if (age > 18) {
+//     return true;
+//   } else {
+//     return confirm("Did parents allow you?");
+//   }
+// }
+
+// function checkAge(age) {
+//   if (age > 18) {
+//     return true;
+//   }
+//   return confirm("Did parents allow you?");
+// }
+
+// function checkAge(age) {
+//   return age > 18 ? true : confirm("Did parents allow you?");
+// }
+
+// function checkAge(age) {
+//   return age > 18 || confirm("Did parents allow you?");
+// }
+
+function max(a, b, c, d) {
+  if (a === undefined) return undefined;
+  if (b === undefined) {
   }
-}
-
-
-for (let i = 0; i < 10; i++) {
-  console.log(i);
 }
