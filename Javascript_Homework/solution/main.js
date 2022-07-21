@@ -785,8 +785,310 @@
 //   return age > 18 || confirm("Did parents allow you?");
 // }
 
-function max(a, b, c, d) {
-  if (a === undefined) return undefined;
-  if (b === undefined) {
-  }
-}
+// function isValidNumber(number) {
+//   if (
+//     number === undefined ||
+//     number === null ||
+//     String(number).trim() === "" ||
+//     isNaN(number) ||
+//     typeof number === Boolean
+//   )
+//     return false;
+//   return true;
+// }
+
+// function max(a, b, c, d) {
+//   if (a === undefined) return undefined;
+//   if (b === undefined) {
+//     if (isValidNumber(a)) return a;
+//     else return NaN;
+//   } else {
+//     if (isValidNumber(a) && isValidNumber(b)) {
+//       return a < b ? a : b;
+//     } else return NaN;
+//   }
+// }
+
+// function max(a, b, c, d) {
+//   if (a === undefined) return undefined;
+//   if (b === undefined) return Math.max(a);
+//   else {
+//     if (c === undefined) return Math.max(a, b);
+//     else {
+//       if (d === undefined) return Math.max(a, b, c);
+//       else return Math.max(a, b, c, d);
+//     }
+//   }
+// }
+
+// const multiply = function (a, b) {
+//   return a * b;
+// };
+
+// multiply(12, 323);
+
+// const result = multiply(17, 7);
+// console.log();
+
+// Fucntion Ecpression
+// const showModal = alert;
+// showModal("Execute modal");
+
+// const showModal = alert();
+// showModal("Execute modal");
+
+// my try
+// function enRole() {
+//   const role = prompt("Enter your role : ");
+//   return role;
+// }
+
+// function accGnt() {
+//   alert("ACCESS GRANTED");
+// }
+
+// function accDn() {
+//   return alert("ACCESS DENIED");
+// }
+
+// function checkPermission(enRole, accGnt, accDn) {
+//   if (enRole === "ADMIN") {
+//     accGnt();
+//   } else {
+//     accDn();
+//   }
+// };
+// my try
+
+// first solution
+// const checkPermission = function (role, yes, no) {
+//   if (role === "ADMIN") {
+//     yes();
+//   } else {
+//     no();
+//   }
+// };
+
+// checkPermission(
+//   "AddMIN",
+//   function () {
+//     alert("ACCESS GRANTED");
+//   },
+//   function () {
+//     alert("ACCESS DENIED");
+//   }
+// );
+// first solution
+
+//iTry
+// const userInput = function () {
+//   var result = prompt("Enter role : ");
+//   return result;
+// };
+
+// const accGnt = function () {
+//   alert("ACCESS GRANTED");
+// };
+
+// const accDn = function () {
+//   alert("ACCESS DENIED");
+// };
+
+// const checkWork = function (role, yes, no) {
+//   const enRole = role();
+//   if (enRole === "ADMIN") {
+//     yes();
+//   } else {
+//     no();
+//   }
+// };
+
+// checkWork(userInput, accGnt, accDn);
+//iTry
+
+// function magic() {
+//   return function (x) {
+//     return x * 42;
+//   };
+// }
+// const answer = magic();
+// // console.log(answer);
+// // console.log(answer(1337));
+// console.log(magic(1337)(42));
+
+// lab 4.3.1
+// const multiply = (num1, num2) => num1 * num2;
+// console.log(multiply(23, 9));
+
+// lab 4.3.2
+// const checkPrime = (number) => {
+//   for (let i = 2; i < number / 2; i++) {
+//     if (number % i === 0) return false;
+//   }
+//   return true;
+// };
+
+// lab 4.3.5
+
+// function ask(question, yes, no) {
+//   if (confirm(question)) yes();
+//   else no();
+// }
+
+// ask(
+//   "Do you agree?",
+//   function () {
+//     alert("You agreed.");
+//   },
+//   function () {
+//     alert("You canceled the execution.");
+//   }
+// );
+
+// const ask = (question, yes, no) => {
+//   if (confirm(question)) yes();
+//   else no();
+// };
+
+// ask(
+//   "Do you agree?",
+//   () => alert("You agreed."),
+//   () => alert("Yoe canceled the execution.")
+// );
+
+// Lab 4.3.6
+
+// const dayToSec = (day) => day * 86400;
+// sconsole.log(dayToSec(15) + " sec.");
+
+// Lab 4.3.7
+// const isDivideBySeven = (number) => number % 7 === 0;
+// CC11 Javascript อาจารย์เอิร์ธ 29-03-2022 (ช่วงเช้า) 30:56
+
+// Lab 4.3.8
+// const calcPoint = (win, draw) => 3 * win + draw;
+
+// full
+// const calcPoing = function(win, draw) {
+//   return alert(3 * win + draw)
+// }
+
+// Lab 4.3.9
+const isLeapYear = (year) => {
+  if (year % 4 !== 0) return false;
+  if (year % 100 !== 0) return true;
+  if (year % 400 === 0) return true;
+  return false;
+};
+
+// full
+// const isLeapYear = (year) => {
+//   if (year % 4 !== 0) {
+//     return false;
+//   } else if (year % 100 !== 0) {
+//       return true;
+//   }
+// };
+
+// Lap 4.3.10
+// const calcAge = (year) => {
+//   let totalDay = 0;
+//   for (let i = year; i <= 2022; i++) {
+//     if (isLeapYear(i)) {
+//       totalDay += 366;
+//     } else {
+//       totalDay += 365;
+//     }
+//   }
+//   return totalDay;
+// };
+
+// Lab 4.3.11
+// const convertFahrenheitToCelsius = (value) => ((value - 32) / 9) * 5;
+
+// Lab 4.3.12
+// const factorial = (number) => {
+//   if (number === 0 || number === 1) return 1;
+//   let result = 1;
+//   for (let i = number; i >= 2; i--) {
+//     result *= i;
+//   }
+//   return result;
+// };
+
+// const factRecursive = (number) =>
+//   number === 0 || number === 1 ? 1 : number * factRecursive(number - 1);
+// console.log(factRecursive(5));
+
+// Lab 5.1
+// const person = {
+//   name: "John",
+//   age: 20,
+//   gender: "Male",
+//   address: "719 Bantatthong, Bankok",
+//   phoneNumber: "0901901900",
+// };
+
+// Lab 5.2
+// const user = {};
+// user.name = "John"; // user => { name: "John" }
+// user.surname = "Doe";
+// user.name = "Matt";
+// delete user.name;
+
+// // Lab 5.3
+// const isEmptyObject = (obj) => {
+//   for (let key in obj) {
+//     return false;
+//   }
+//   return true;
+// };
+
+// Lab 5.4
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
+
+// const calcSalary = (obj) => {
+//   let sum = 0;
+//   for (let key in obj) {
+//     sum += obj[key];
+//   }
+//   return sum;
+// };
+
+// Lab 5.5
+// const testObj = { width: 200, height: 300, name: "table" };
+// console.log(testObj);
+
+// const multiplyNumber = (obj, num) => {
+//   const result = {};
+//   for (let key in obj) {
+//     if (typeof obj[key] === "number") {
+//       result[key] = num * obj[key];
+//     } else {
+//       result[key] = obj[key];
+//     }
+//   }
+//   return result;
+// };
+
+// const resultObj = multiplyNumber(testObj, 3);
+// console.log(resultObj);
+
+// Lab 5.6 2:18:30
+const username = prompt("enter user : ");
+const email = prompt("enter email : ");
+const password = prompt("enter password");
+
+const user = {
+  username,
+  email,
+  password,
+};
+
+console.log(user);
+
+// 2:21:40;

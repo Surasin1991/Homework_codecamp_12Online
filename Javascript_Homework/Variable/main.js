@@ -444,16 +444,153 @@
 
 // console.log(b);
 
-console.log(window);
+// console.log(window);
 
-var b = 200;
-function a() {
-  return "a";
-}
+// var b = 200;
+// function a() {
+//   return "a";
+// }
 
-console.log(b);
+// console.log(b);
 
-var aa = 50;
-console.log(window);
+// var aa = 50;
+// console.log(window);
 
-window.alert("Hello");
+// window.alert("Hello");
+
+// const user = {
+//   name: "John",
+//   age: 20,
+// };
+
+// const admin = user;
+// admin.age = 50;
+// console.log(user.age);
+// console.log(user);
+// console.log(admin);
+// console.log(admin === user);
+
+// const a = { name: "test" };
+// const b = { name: "test" };
+// console.log(a === b);
+
+// const admin = {};
+// // admin.name = user.name;
+// // admin.age = user.age;
+
+// for (let key in user) {
+//   admin[key] = user[key];
+// }
+
+// user.name = "Jessica";
+// console.log(user);
+// console.log(admin);
+
+// const a = { age: 2 };
+// const b = { email: "gmail.com", age: 10 };
+// // let c = {};
+// let c = Object.assign({}, a, b);
+// console.log(c);
+// let admin = Object.assign({}, user);
+// console.log(admin);
+
+// const a = { age: 29, phone: 1234, car: "Civic" };
+// const b = { email: "gmail.com", age: 60 };
+// let c = Object.assign({}, a, b);
+// console.log(c);
+
+// let d = Object.assign(a);
+// console.log(c === a + b);
+// console.log(c === a);
+
+// const user = {
+//   name: "John",
+//   sayHi: function() {
+//     alert("Hi!");
+//   };
+// };
+
+//short hand
+// const user = {
+//   name: "John",
+//   sayHi() {
+//     alert("Hi! " + this.name);
+//     this.run();
+//   },
+//   run() {
+//     console.log("Runnnn");
+//   },
+// };
+
+// const admin = { name: "admin" };
+// admin.sayHi = user.sayHi;
+// admin.run = user.run;
+// user.sayHi();
+// admin.sayHi();
+
+// function sayHi() {
+//   alert("Hi " + this.name);
+// }
+// const user2 = { name: "Thong" };
+// sayHi();
+// user2.sayHi = user.sayHi;
+// window.sayHi();
+// user2.sayHi();
+// console.log(user2);
+
+// function sayHi() {
+//   console.log("Hi " + this.name);
+// }
+
+// var name = "CC";
+// const sayHi = () => {
+//   console.log("Hi " + this.name);
+// };
+
+// const a = {};
+// const b = { name: "B" };
+// a.sayHi = sayHi;
+// b.sayHi = sayHi;
+// a.sayHi();
+// b.sayHi();
+
+// const person1 = {
+//   name: "a",
+//   age: 12,
+//   email: "a@gamil.com",
+// };
+
+// const person2 = {
+//   name: "b",
+//   age: 19,
+//   email: "b@gamil.com",
+// };
+
+// const person3 = {
+//   name: "c",
+//   age: 22,
+//   email: "c@gamil.com",
+// };
+
+// const person4 = {
+//   name: "d",
+//   age: 16,
+//   email: "d@gamil.com",
+// };
+
+// function Person(name, age, email) {
+//   this.name = name;
+//   this.age = age;
+//   this.email = email;
+// }
+
+// const person5 = new Person("f", 15, "f@gmail.com");
+// console.log(person5);
+
+const user = {
+  // address: {
+  //   province: "Bangkok",
+  // },
+};
+
+console.log(user.address?.province);
