@@ -587,10 +587,156 @@
 // const person5 = new Person("f", 15, "f@gmail.com");
 // console.log(person5);
 
-const user = {
-  // address: {
-  //   province: "Bangkok",
-  // },
-};
+// const user = {
+// address: {
+//   province: "Bangkok",
+// },
+// };
 
-console.log(user.address?.province);
+// console.log(user.address?.province);
+
+// CC11 Javascript อาจารย์เอิร์ธ 31-03-2022 (ช่วงเช้า) 00:00:00
+
+// let students = ["Knot", "Nang", "Gun", "Tea"];
+// let conStudents = new Array("Knot", "Nang", "Gun");
+// let arr = [0, true, "Test", { name: "John", age: 20 }, null, [9, 8, "test2"]];
+// let user = ["John", "Doe", 20, "Male"]; // { firstName: "John", lastName: "Doe",...}
+
+// console.log(students.length);
+// const name3 = students[2];
+// console.log(name3);
+// students[1] = "Note";
+// console.log(students);
+// students[4] = "Petch";
+// console.log(students);
+// students[students.length - 1] = "Thong";
+// console.log(students);
+// students[100] = "Fah";
+// console.log(students.length);
+// console.log(students);
+
+// const sales = [100, 300, 250, 50, 30];
+// for (let i = 0; i < sales.length; i++) {
+//   console.log(sales[i].toFixed(2), "Bath");
+// }
+
+// let sum = 0;
+// for (let i = 0; i < sales.length; i++) {
+//   sum += sales[i];
+// }
+// console.log(sum);
+
+// let nums = [1, 6, 9, 2, 5];
+// let words "I believe I can fly";
+
+// const sales = [100, 300, 250, 50, 30];
+// let i = 0;
+// for (let element of sales) {
+//   console.log(`${i + 1}. ${element}`);
+//   i++;
+// }
+
+// function User(email, password) {
+//   this.email = email;
+//   this.password = password;
+// }
+
+// console.log(sales[sales.length - 3]);
+
+// const user = new User("test@gmail.com", "12345");
+// const arr = new Array(100, 300, 250, 50, 30);
+// const obj = new Object({ a:10, b:20 })
+
+// const sales = [100, 300, 250, 50, 30];
+// // สร้าง loop ตามจำนวน element
+// // ในแต่ละรอบ จะส่งค่า element, index, และตัว array เข้าไปใน
+// // callback function
+// const result = sales.forEach((element, index, array) => {
+//   console.log("Element : " + element);
+//   console.log("Index : " + index);
+//   console.log(array);
+//   console.log("");
+// });
+
+// let sum = 0;
+// sales.forEach((element) => {
+//   sum += element;
+// });
+// console.log(sum);
+
+// function accSum(element) {
+//   sum += element;
+// }
+
+// const sales = [100, 300, 250, 50, 30];
+
+// const result = sales.forEach((element, index, array) => {
+//   console.log("Element : " + element + " | " + array);
+//   console.log("Index : " + index);
+//   console.log("Array : " + array);
+// });
+
+// let sum = 0;
+
+// function accSum(element) {
+//   sum += element;
+// }
+
+// sales.forEach((element) => {
+//   sum += element;
+// });
+// console.log(sum);
+
+// sales.forEach(accSum);
+
+// console.log(sum);
+
+// sales.forEach(console.log);
+// console.log(100, 0, [100, 300, 250, 50, 30]);
+
+// CC11 Javascript อาจารย์เอิร์ธ 31-03-2022 (ช่วงเช้า) 2:36:42
+
+// const student = ["Knot", "Nang", "Gun", "Tea"];
+
+// console.log(student);
+// // student.push("Boss");
+// // student.push("Toro", "Mountain", "Mink");
+// const resultPush = student.push("Karn", "Movie", "Web");
+// console.log(student);
+// console.log(resultPush);
+
+// const resultPop = student.pop();
+// console.log(student);
+// console.log(resultPop);
+
+// const resultShift = student.shift();
+// console.log(student);
+// console.log(resultShift);
+
+// const resultUnshift = student.unshift("Ping", "Parn");
+// console.log(student);
+// console.log(resultUnshift);
+
+// const resultSplice = student.splice(2, 1, "Zien", "Term");
+// console.log(student);
+// console.log(resultSplice);
+
+// const resultSplice = student.splice(1, 1);
+// console.log(student);
+// console.log(resultSplice);
+
+// const num1 = [7, 8, 3, 5];
+// const num2 = [1, 8, 9];
+// const num3 = [0, 7, 4, 5];
+
+// const concatArr = num1.concat(num2, num3);
+// console.log(num1);
+// console.log(num2);
+// console.log(num3);
+// console.log(concatArr);
+
+// const result = [1, 2].concat(num1);
+// const result2 = concatArr.concat(1, 2).concat(4, 5);
+
+// console.log("result = ", result);
+// console.log("result2 = ", result2);

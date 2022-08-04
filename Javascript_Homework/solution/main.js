@@ -990,7 +990,7 @@ const isLeapYear = (year) => {
 //   }
 // };
 
-// Lap 4.3.10
+// Lab 4.3.10
 // const calcAge = (year) => {
 //   let totalDay = 0;
 //   for (let i = year; i <= 2022; i++) {
@@ -1079,16 +1079,271 @@ const isLeapYear = (year) => {
 // console.log(resultObj);
 
 // Lab 5.6 2:18:30
-const username = prompt("enter user : ");
-const email = prompt("enter email : ");
-const password = prompt("enter password");
+// const username = prompt("Enter Username : ");
+// const email = prompt("Enter email : ");
+// const password = prompt("Enter password : ");
 
-const user = {
-  username,
-  email,
-  password,
-};
-
-console.log(user);
+// const user = {
+//   username,
+//   email,
+//   password,
+// };
 
 // 2:21:40;
+// Lab 5.7
+// let key = prompt("Enter key : ");
+// if (key !== "stop") {
+//   let value = prompt("Enter value");
+//   if (value !== "stop") {
+//   while (key !== "stop" && value !== "stop") {
+
+//     }
+//   }
+// }
+
+// new way
+// let result = {};
+// while (1) {
+//   let key = prompt("Enter key : ");
+//   if (key === "stop") break;
+//   let value = prompt("Enter value : ");
+//   if (value === "stop") break;
+//   result[key] = value;
+// }
+// console.log(result);
+
+// Lab 5.8
+// let result = {};
+// while (1) {
+//   let key = prompt("Enter key : ");
+//   if (key === "stop") break;
+//   let value = prompt("Enter value : ");
+//   if (value === "stop") break;
+//   if (value > 1) {
+//     result[key + "s"] = value;
+//   } else {
+//     result[key] = value;
+//   }
+// }
+// console.log(result);
+
+// Lab 5.9
+// let name = prompt("Enter name : ");
+// let amount = prompt("Enter amount");
+// let price = prompt("Enter price");
+// let discount = prompt("Enter discount");
+
+// const product = {
+//   name,
+//   amount,
+//   price,
+// };
+
+// if (discount > 0) {
+//   product.discount = discount;
+// }
+
+// const calcPrice = obj => {
+//   // if (obj.discount) {
+//   //   return (
+//   //     // obj.price*obj.amount - (obj.discount /100) * obj.price * obj.amount)
+//   //     obj.price * obj.amount * (1 - obj.discount / 100)
+//   // } else {
+//   //   return obj.price * obj.amount;
+//   return obj.price * obj.amount * (1 - obj.discount || 0) / 100);
+// }
+
+// const calcPrice = (obj) =>
+//   obj.price * obj.amount * (1 - (obj.discount || 0) / 100);
+
+// Lab 5.10
+// const employees = {
+//   john: {
+//     salary: 1000,
+//     address: { district: "Ratchathewi", province: "Bangkok" },
+//   },
+//   peter: {
+//     salary: 1500,
+//     address: { district: "Pathumwan", province: "Bangkok" },
+//   },
+//   mike: {
+//     salary: 800,
+//     address: { district: "Pakkret", province: "Nonthaburi" },
+//   },
+//   sarah: {
+//     salary: 2200,
+//     address: { district: "Sriraja", province: "Chonburi" },
+//   },
+// };
+
+// const name = prompt("Enter employee name : ");
+// if (employees[name]) {
+//   console.log(
+//     `Name: ${name}, salary: ${employees[name].salary}, address: ${employees[name].address.district}, ${employees[name].address.province}`
+//   );
+// } else {
+//   console.log("Not found!");
+// }
+
+// let num1 = 1_000_000_000_000;
+// let num2 = 1e12;
+// let num3 = 1000e9;
+// let num4 = 250000000;
+// let num5 = 2.5e8;
+
+// console.log(`${num1}\n${num2}\n${num3}\n${num4}\n${num5}`);
+
+// const bi = 0b100; //4
+// const oct = 0o126; //86
+// const hex = 0xf0; //240
+
+// console.log(bi, oct, hex);
+
+// let a = 50;
+// let aHex = a.toString(16);
+// console.log(aHex);
+
+// let b = 4.689;
+
+// console.log(Math.floor(b));
+// console.log(Math.ceil(b));
+// console.log(Math.round(b));
+// console.log(Math.trunc(b));
+
+// console.log(Math.floor(-4.245));
+
+// Lab 6.1.3
+// const calcPoint = (value) => Math.floor(value / 100);
+
+// // Lab 6.1.6
+// const random = (min, max) => Math.random() * (max - min) + min;
+
+// Lab 6.1.7
+// const randomDiceScord = () => Math.floor(Math.random() * 6) + 1; // [0, 6)
+
+// Lab 6.1.8
+// const calcCricumference = radius => 2 * Math.PI * radius;
+
+// Lab 6.1.9
+// const calcDiagonal = (w, l) => Math.sqrt(w ** 2 + l ** 2);
+
+// Lab 6.1.10
+// const convertDegToRadian = (deg) => (Math.PI / 180) * deg;
+
+// for (let char of "Hello") {
+//   console.log(char);
+// }
+
+// console.log("Thailand".toUpperCase());
+// console.log("Thailand".toLowerCase());
+
+// let str = "Widget with id";
+// console.log(str.indexOf("Widget"));
+// console.log(str.indexOf("with"));
+// console.log(str.indexOf("with", 7)  );
+
+// Lab 7.5.5
+// const inventory = [
+//   { name: "apples", quantity: 2 },
+//   { name: "bananas", quantity: 0 },
+//   { name: "cherries", quantity: 5 },
+// ];
+
+// const result = inventory.find((el) => el.name === "cherries");
+// console.log(result);
+
+// Lab 7.5.7
+// const tasks = [
+//   { id: 1, name: "Fishing" },
+//   { id: 2, name: "Shopping" },
+//   { id: 3, name: "Swimming" },
+// ];
+
+// function updateTask(id, newName) {
+//   const idx = tasks.findIndex((task) => task.id === id);
+//   if (idx !== -1) {
+//     tasks[idx].name = newName;
+//   } else {
+//     alert("Task with this id is not found");
+//   }
+// }
+
+// updateTask(3, "Golf");
+
+// console.log(tasks);
+
+// Lab 7.5.8
+// const tasks = [
+//   { id: 1, name: "Fishing" },
+//   { id: 2, name: "Shopping" },
+//   { id: 3, name: "Swimming" },
+// ];
+
+// const deleteTask = function (id) {
+//   // #1
+//   // return tasks.filter(task => task.id !== id);
+
+//   // #2
+//   const idx = tasks.findIndex(task => task.id === id)
+//   if (idx !== -1) {
+//     task.splice(idx, 1);
+//   }
+// };
+
+// Lab 7.5.10
+// const filterRange = function (arr, a, b) {
+//   return arr.filter((el) => el >= a && el <= b);
+// };
+
+// 0:4:27CC11 Javascript อาจารย์เอิร์ธ 31-03-2022 (ช่วงบ่าย)
+// Lab 7.2.1
+
+// const isValidNumber = (number) => {
+//   if (number === null || number.trim() === "" || isNaN(number)) return false;
+//   return true;
+// };
+
+// const resultArr = [];
+// let sum = 0;
+// while (1) {
+//   const input = prompt("Enter number : ");
+//   if (!isValidNumber(input)) {
+//     break;
+//   }
+//   resultArr[resultArr.length] = +input;
+//   sum += +input;
+// }
+
+// let sum = 0;
+// for (let el of resultArr) {
+//   sum += el;
+// }
+
+// Lab 7.2.2
+
+// const squareArr = (input) => {
+//   const result = [];
+//   for (let el of input) {
+//     result[result.length] = el ** 2;
+//   }
+//   return result;
+// };
+// const arr = [2, 3, 3, 7, 11];
+// const response = squareArr(arr);
+// console.log(response);
+
+// 1:30:44 CC11 Javascript อาจารย์เอิร์ธ 31-03-2022 (ช่วงบ่าย)
+// Lab 7.2.3
+const sales = [
+  { price: 1000, discount: 0.1 },
+  { price: 500, discount: 0.05 },
+  { price: 100 },
+];
+
+const summary = [];
+for (let el of sales) {
+  summary[summary.length] = { netPrice: el.price * (1 - (el.discount || 0)) };
+}
+console.log(summary);
+
+// 1:38:09 CC11 Javascript อาจารย์เอิร์ธ 31-03-2022 (ช่วงบ่าย)
