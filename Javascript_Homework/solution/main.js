@@ -1334,16 +1334,286 @@ const isLeapYear = (year) => {
 
 // 1:30:44 CC11 Javascript อาจารย์เอิร์ธ 31-03-2022 (ช่วงบ่าย)
 // Lab 7.2.3
-const sales = [
-  { price: 1000, discount: 0.1 },
-  { price: 500, discount: 0.05 },
-  { price: 100 },
-];
+// const sales = [
+//   { price: 1000, discount: 0.1 },
+//   { price: 500, discount: 0.05 },
+//   { price: 100 },
+// ];
 
-const summary = [];
-for (let el of sales) {
-  summary[summary.length] = { netPrice: el.price * (1 - (el.discount || 0)) };
-}
-console.log(summary);
+// const summary = [];
+// for (let el of sales) {
+//   summary[summary.length] = { netPrice: el.price * (1 - (el.discount || 0)) };
+// }
+// console.log(summary);
 
 // 1:38:09 CC11 Javascript อาจารย์เอิร์ธ 31-03-2022 (ช่วงบ่าย)
+
+// const fibonacci = (n) => {
+//   let result = [0, 1];
+//   for (let i = 2; i <= n; i++) {
+//     result[i] = result[i - 1] + result[i - 2];
+//   }
+//   return result[n];
+// };
+
+// console.log(fibonacci(20));
+
+// const students = ["Knot", "Nang", "Gun", "Tea", "Gun", "Toro", "Ping", 0];
+// const index = students.indexOf("Gun", 3);
+// const index = students.lastIndexOf("Gun");
+// const isContain = students.includes("0");
+// console.log(isContain);
+// console.log(Object.is(NaN, NaN));
+// const index = students.indexOf("Toro");
+// if (index !== -1) {
+//   students[index] = "Mountain";
+// }
+// console.log(students);
+
+// const students = ["Knot", "Nang", "Gun", "Tea", "Gun", "Toro", "Ping"];
+// const item = students.find(function testEle(element, index, array) {
+//   if (element.startsWith("L")) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// });
+
+// console.log(item);
+
+// const students = ["Knot", "Nang", "Gun", "Tea", "Gun", "Toro", "Ping"];
+// const filtered = students.filter(function (element, index, array) {
+//   if (element.startsWith("G")) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// });
+
+// console.log(filtered);
+
+// const students = ["Knot", "Nang", "Gun", "Tea", "Gun", "Toro", "Ping"];
+// const filtered = students.filter(function (element, index, array) {
+//   if (element.length === 3) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// });
+
+// console.log(filtered);
+
+// const nums = [0, 5, -3, -7, 9, 18, -2, 20, 6];
+// let sum = 0;
+// const filteredPosInt = nums.filter((element) => element > 0);
+// filteredPosInt.forEach((el) => (sum += el));
+// console.log(filteredPosInt);
+// console.log(sum);
+
+//CC11 Javascript อาจารย์เอิร์ธ 01-04-2022 (ช่วงเช้า) 00:00:00
+
+// Lab 7.5.5
+// const inventory = [
+//   { name: "apples", quantity: 2 },
+//   { name: "bananas", quantity: 0 },
+//   { name: "cherries", quantity: 5 },
+// ];
+
+// const result = inventory.find((el) => el.name === "cherries");
+// console.log(result);
+
+// Lab 7.5.7
+// const tasks = [
+//   { id: 1, name: "Fishing" },
+//   { id: 2, name: "Shopping" },
+//   { id: 3, name: "Swimming" },
+// ];
+// console.log(tasks);
+// console.log(tasks);
+
+// function updateTask(id, newName) {
+//   const idx = tasks.findIndex((task) => task.id === id);
+//   if (idx !== -1) {
+//     tasks[idx].name = newName;
+//   } else {
+//     alert("Task with this id is not found !");
+//   }
+//   console.log(tasks);
+// }
+
+// updateTask(2, "Travelling");
+
+// Lab 7.5.8
+//#1
+
+// const deleteTask = function (id) {
+//   //   return tasks.filter(task => task.id !== id)
+//   // };
+//   //#2
+//   const newTasks = tasks.slice();
+//   const idx = tasks.findIndex((task) => task.id === id);
+//   if (idx !== -1) {
+//     tasks.splice(idx, 1);
+//   }
+//   return newTasks;
+// };
+
+// console.log(deleteTask(2));
+
+// Lab 7.5.10
+// const filterRange = function (arr, a, b) {
+//   return arr.filter((el) => el >= a && el <= b);
+// };
+
+// const result = filterRange([3, 9, 2, 8, 4], 3, 6); // Expexted Result: [3, 4]
+// console.log(result);
+
+// const arr = [0, 2, -3, 1, -7, 5, 9];
+
+//CC11 Javascript อาจารย์เอิร์ธ 01-04-2022 (ช่วงเช้า) 00:48:38
+
+// const students = ["Knot", "Nang", "Gun", "Tea", "Gun", "Toro", "Ping"];
+// function map(cb) {
+//   const result = [];
+//   for (let i = 0; i < students.length; i++) {
+//     const resultEachLoop = cp(students[i], i, students);
+//     result.push(resultEachLoop);
+//   };
+//   return result;
+// };
+
+// const resultMap = students.map(function cb(element, index, arr) {
+//   return element.toUpperCase();
+// });
+
+// console.log(resultMap);
+//CC11 Javascript อาจารย์เอิร์ธ 01-04-2022 (ช่วงเช้า) 00:58:23
+
+// const str = "level";
+// console.log(Array.from(str));
+
+// const arrLikeObj = {
+//   0: "A",
+//   1: "C",
+//   2: "F",
+//   length: 3,
+// };
+// const obj = { a: "Hello" };
+// arrLikeObj.pop();
+
+// const arr = Array.from(arrLikeObj);
+// arr.forEach((el) => console.log(el));
+// console.log(arr);
+
+// const obj = { name: "John", age: 20 };
+// const objConst = new Object({ name: "John", age: 20 });
+// const arr = [2, 1, 5, 3];
+// const arrConst = new Array(2, 1, 5, 3);
+// const date = new Date();
+// console.log(objConst);
+// console.log(arrConst);
+// console.log(date.getFullYear());
+// console.log(date.getDate());
+// console.log(date.getMonth() + 1);
+// console.log(date);
+
+// const map = new Map();
+// console.log(map.size);
+// map.set("name", "John");
+// map.set("gender", "Male");
+// map.set(true, "Boolean Key");
+// map.set(true, "Reset Boolean Key");
+// map.set("true", "String Key");
+// console.log(map.get("gender"));
+// console.log(map.has("gender"));
+// console.log(map.has("phone"));
+// console.log(map.get("true"));
+// console.log(map.get(true));
+// console.log(map);
+// map.delete("true");
+// console.log(map);
+// console.log("map size : ", map.size);
+// map.clear();
+// console.log(map);
+
+// const map = new Map([["age", 20], ["email", "t@gmail.com"], "String"]);
+// console.log(map);
+
+// const obj = {
+//   a: 2,
+//   b: 5,
+//   d: 1,
+// };
+
+// const map = new Map(Object.entries(obj));
+// const keys = map.keys();
+// const values = map.values();
+// const entries = map.entries();
+// console.log(keys);
+// console.log(values);
+// console.log(entries);
+
+// for (let ent of entries) {
+//   console.log(Array.isArray(ent));
+// }
+
+// const obj1 = new Object(Array.from(entries));
+// console.log(obj1);
+
+//CC11 Javascript อาจารย์เอิร์ธ 01-04-2022 (ช่วงบ่าย) 02:46:59
+
+// const set = new Set([5, "John", false, null]);
+// set.add(10);
+// set.add(5);
+// set.add(1);
+// console.log(set);
+
+// const arr = [1, 9, 2, 2, 3, 7, 3];
+// const set = new Set(arr);
+// console.log(Array.from(set));
+
+// CC11 Javascript อาจารย์เอิร์ธ 04-04-2022 (ช่วงเช้า) 00:00:00
+
+// Lab 7.5.1
+const notebook = {
+  brand: "ASUS",
+  model: "Vivobook D413IA-EB303TS",
+  processor: "ADM Ryzen 7 4700U 3.6GHz",
+  graphics: "Integrated Graphics : AMD Radeon Graphics",
+  ram: "8GB DDR4 Onboard",
+  storage: "512GB PCIe NVMe M.2 SSD",
+};
+
+// method#1
+// const cloneNB = {};
+// for (let key in notebook) {
+//   cloneNB[key] = notebook[key];
+// }
+// console.log(cloneNB);
+
+// method#2
+// const cloneNBAssign = Object.assign({}, notebook);
+// console.log(cloneNBAssign);
+
+// Lab 7.5.2
+// const state1 = { username: "john", point: 100, loading: true };
+// const state2 = Object.assign({}, state1, {
+//   point: 75,
+//   loading: false,
+//   success: true,
+// });
+
+// Lab 7.5.3
+const permission1 = { canView: false, canDelete: false };
+const permission2 = { canUpdate: true, canCreate: true };
+const permission3 = { canCreat: false, canDelete: true };
+const permission4 = { canView: true };
+
+const permission = Object.assign(
+  {},
+  permission1,
+  permission2,
+  permission3,
+  permission4
+);
+console.log(permission);
