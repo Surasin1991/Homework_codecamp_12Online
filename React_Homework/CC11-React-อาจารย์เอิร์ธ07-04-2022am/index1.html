@@ -15,11 +15,14 @@
 
   <script>
     const btn = document.querySelector('.btn-event')
-    btn.addEventListener('click', function () {
+    const click = function () {
       alert('Event Listener Clicked')
-    })
-    https://youtu.be/dxhiwF8viKg?t=230
+    }
+    btn.addEventListener('click', click)
 
+      setTimeout(() => {
+      btn.removeEventListener('click', click)
+    }, 5000);
 
     // const btn1 = document.querySelector('.btn-dom');
     // btn1.onclick = function () {
