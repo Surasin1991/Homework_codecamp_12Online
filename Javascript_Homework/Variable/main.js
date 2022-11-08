@@ -1,3 +1,6 @@
+// https://www.youtube.com/watch?v=lzkaY23RNGk&list=PL2pMBsI7XJjPiWeZNWgVCCLNFxv0s3i1V&index=9&t=171s
+
+
 // let a = 20;
 // let b = 50;
 
@@ -740,3 +743,70 @@
 
 // console.log("result = ", result);
 // console.log("result2 = ", result2);
+
+
+// _______________________________________________
+
+// const students = ['Knot', 'Nang', 'Gun', 'Tea', 'Gun', 'Toro', 'Ping'];
+
+// console.log(students)
+
+// students.sort((a, b) => {
+//   if (a > b) return -1;
+//   else return 1;
+// });
+// console.log(students);
+// _______________________________________________
+
+// let phone = '081-590-3499';
+// console.log(phone)
+// const splitted = phone.split('-');
+// console.log(splitted);
+
+// _______________________________________________
+
+// const text = 'Welcome to Thailand. Land of smaile.';
+// const splittedText = text.split(' ');
+// console.log(splittedText);
+// console.log(text);
+// _______________________________________________
+// 2.05.30
+
+// let phone = '081-590-3499';
+// console.log(phone)
+// const splitted = phone.split('-');
+// console.log(splitted);
+
+// const phoneWithoutDash = splitted.join('')
+// console.log(phoneWithoutDash)
+
+// _______________________________________________
+// 2:05:37
+
+// const word = 'level';
+// console.log(word.split(''));
+// function parlin(word) {
+//   return word.split('').reverse().join('') === word;
+// }
+
+// _______________________________________________
+
+// const students = ['Knot', 'Nang', 'Gun', 'Tea', 'Gun', 'Toro', 'Ping'];
+
+// console.log(`My friends: ${students.slice(0, students.length - 1).join(', ')} and ${students[students.length - 1]}`)
+
+// _______________________________________________
+// Array Reduce
+// 2:18:08
+
+const nums = [34, 27, 89, 55, 5, 12, 47, 76, 60, 27, 43, 9];
+let sum = 0
+for (let item of nums) {
+  sum += item;
+}
+
+const result = nums.reduce(function(acc, element, index, arr) {
+  return acc + element
+}, 0)
+
+// Ite1;
