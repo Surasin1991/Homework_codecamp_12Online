@@ -23,17 +23,18 @@
     //   React.createElement('aside', null, 'Side bar'),
     //   React.createElement('main', { id: 'main'}, 'MainContainer'),
     //   );
+      const students = ['John', 'Jack', 'Jane']
       const div = (
         <div className="main-content">
           <h2>Hello My Friends</h2>
           <p>Friend List</p>
           <ul>
-            <li>John</li>
-            <li>Jack</li>
-            <li>Jane</li>
+            <li>{students[0]}</li>
+            <li>{students[1]}</li>
+            <li>{students[2]}</li>
           </ul>
         </div>
-        )
+        );
       
       // <div class="main-content"></div>
       // ReactDOM.render(div, document.getElementById("root"))

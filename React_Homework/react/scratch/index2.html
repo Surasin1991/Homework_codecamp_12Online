@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index2</title>
+</head>
+<body>
+<!-- https://www.youtube.com/watch?v=u5K0Mqrrf3g&list=PL2pMBsI7XJjMKka8fyHGbOQYDsXQQmXVk&index=1 -->
+<!-- CC11 React อาจารย์เอิร์ธ 07-04-2022 (ช่วงบ่าย) -->
+<!-- 3:46:19  -->
+  <div id="root"></div>
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+  
+  function SellerResponse(props) {
+    const { text, date, sender = 'by unknow' } = props;
+    return (
+      <div style={{ backgroundColor: '#ccc', padding: '1rem', margin: '1rem'}}>
+        <h6>Seller Response</h6>
+        <p>{text}</p>
+        <p>{date}</p>
+        <p>{sender}</p>
+      </div> 
+      )};
+
+  const div = 
+  (<div>
+    <SellerResponse text="ยินดีค่ะ" date="2022/11/09" sender="Thong"/>
+    {/* SellerResponse({text: 'ยินดีค่ะ', date: '2022/11/09', sender: 'Thong'}) */}
+    <SellerResponse text="ถูกใจมาก" date="2022/11/03" sender="Pond"/>
+    <SellerResponse text= 'ขอบคุณค่ะ' date= '2022/10/21'/>
+    <SellerResponse text= 'ได้รับแล้ว'/>
+  </div>
+  );
+  
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(div)
+</script>
+</body>
+</html>
