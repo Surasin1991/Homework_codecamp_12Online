@@ -4,21 +4,26 @@ function App() {
   // const style = {
   //   margin: "12px",
   //   border: "1px solid black",
-  //   padding: 16,
+  //   padding: '16px',
   //   backgroundColor: '#ccc'
   // }
   // return (
   // <div style={style}>
   //   Hello React
   // </div>
+  // );
 
-  return <div style={style}>Hello React</div>
-
-  );
+  return <div style={{
+    margin: "12px", 
+    color: 'blue',
+    fontSize: '23px',
+    border: "1px solid black",
+    backgroundColor: '#ccc',
+    borderRadius: '8px'
+  }}
+  >
+    Hello React App</div>
 }
 
 export default App;
 
-<!-- https://www.youtube.com/watch?v=mvGr4newmb0&list=PL2pMBsI7XJjMKka8fyHGbOQYDsXQQmXVk&index=4 -->
-<!-- CC11 React อาจารย์เอิร์ธ 07-04-2022 (ช่วงบ่าย) -->
-<!-- 26:12 -->
