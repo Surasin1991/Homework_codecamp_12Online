@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 
 function App() {
   // const style = {
@@ -13,17 +13,37 @@ function App() {
   // </div>
   // );
 
-  return <div style={{
-    margin: "12px", 
-    color: 'blue',
-    fontSize: '23px',
-    border: "1px solid black",
-    backgroundColor: '#ccc',
-    borderRadius: '8px'
-  }}
-  >
-    Hello React App</div>
-}
+  // const ano = (a, b) => {
+  //   return event => {
+  //     console.log(event);
+  //     console.log(a + b);
+  //   };
+  // };
 
+  return (
+//   <div style={{
+//     margin: "12px", 
+//     color: 'blue',
+//     fontSize: '23px',
+//     border: "1px solid black",
+//     backgroundColor: 'yellow',
+//     borderRadius: '8px'
+//   }}
+//   className="text-center"
+//   >
+//     Hello React App</div>
+// }
+    
+    // <button value="111" onClick={event => console.log(event)}> Click </button>
+  // <input 
+  //   name="username" 
+  //   placeholder="Username" 
+  //   onChange={(event) => console.log(event)}
+  // />
+  <a href="https://shopee.co.th" onClick={(event) => {
+    event.preventDefault();
+    console.log(event)
+  }}>Navigate</a>
+)};
 export default App;
 
