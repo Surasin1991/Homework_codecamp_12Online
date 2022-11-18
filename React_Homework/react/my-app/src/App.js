@@ -1,13 +1,14 @@
-// lab6-2
 
-function App() {(
-  <select>
-    <option>Thailand</option>
-    <option>England</option>
-    <option>Chaina</option>
-    <option>Japan</option>
-    <option>Singapore</option>
+function App() {
+  return (
+  <select onChange={(event) => console.log(event.target.value)}>
+    <option value="Thailand">Thailand</option>
+    <option value="Malasia">Malasia</option>
+    <option value="Taiwan">Taiwan</option>
+    <option value="USA">USA</option>    
+    <option value="Japan">Japan</option>
   </select>
 )};
+
 export default App;
 
