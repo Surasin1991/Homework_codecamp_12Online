@@ -1,13 +1,18 @@
 
 function App() {
+  const handleChangeCheckBox = (event) => {
+    console.log(`name:${event.target.name} value:${event.target.value} check:${event.target.checked}`)
+  }
   return (
-  <select onChange={(event) => console.log(event.target.value)}>
-    <option value="Thailand">Thailand</option>
-    <option value="Malasia">Malasia</option>
-    <option value="Taiwan">Taiwan</option>
-    <option value="USA">USA</option>    
-    <option value="Japan">Japan</option>
-  </select>
+  <div style={{margin: '3rem'}}>
+    <input type="checkbox" id="Apple" name="Apple" value="iPhone14Pro" onChange={handleChangeCheckBox}></input>
+    <label htmlFor="apple">iPhone14Pro</label><br></br>
+    <input type="checkbox" id="Samsung" name="Samsung" value="S44UltraMaxPlus" onChange={handleChangeCheckBox}></input>
+    <label htmlFor="Samsung">SamsungS44UltraMaxPlus</label><br></br>
+    <input type="checkbox" id="Mi" name="Mi" value="Mi999ProMaxExtraUltraPlusTurbo" onChange={handleChangeCheckBox}></input>
+    <label htmlFor="Mi">Mi999ProMaxExtraUltraPlusTurbo</label>
+  </div>
+  
 )};
 
 export default App;
