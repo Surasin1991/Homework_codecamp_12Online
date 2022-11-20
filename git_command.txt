@@ -1,0 +1,38 @@
+>>>>    git command    <<<<
+git init >>> to initialize this folder to git folder
+
+git add  README.md >>> to add REDME.md file in git folder
+
+git commit -m"input descript for commit here" >>> 	to commit file final befor push to online
+
+git remote add origin https:babababababaa.git  >>>to remote git that has been created by online
+
+git clone [url your git] >>> to clone repo from remote to local
+
+git remote -v 	>>> to check git connect or not
+
+git add . >>> add new file or new edited file befor commit
+
+git branch -M main >>>	set branch to name "main"
+
+git push -u origin [your branch name here] >>> ex. git push -u origin main > to push git upstream to branch "main"
+
+git push >>> use after first push (push -u origin.....)
+
+git pull >>> to pull git from remote session (should pull befor push)
+
+git --help >>> when you need to see git command
+
+git branch [NAME YOUR BRANCH HERE] >>> ex. git branch develop > to create new branch name develop
+
+git branch -a >>> to see your branch
+
+git checkout [your branch name] >>> to switch from current branch to other branch ex. git checkout develop > to switch your branch to develop
+
+git checkout . >>> to rewind to last push in this branch
+
+git merge [your branch name to merge] >>> ex. if you stay on branch main > git merge develop > to pull branch develop into branch manin
+
+Merge confilct!!!
+if you have confilct in branch > Merge branch ask you for command >>>
+press 'i' and insert command >> Merge commit >> and save by [esc + :] >> wq
