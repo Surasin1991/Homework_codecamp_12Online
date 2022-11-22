@@ -1,6 +1,5 @@
 
 function App() {
-  const ggLink = document.getElementById("gg")
   return (
   <a 
     href="https://google.com"
