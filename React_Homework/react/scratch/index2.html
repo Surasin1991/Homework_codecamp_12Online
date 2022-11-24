@@ -28,16 +28,29 @@
       </div> 
       )};
 
-  const date = '2022-11-24'
-  const div = (
-  <div>
-    <SellerResponse text="ยินดีค่ะ" date={date} sender="Thong"/> {/* props => {text="ยินดีค่ะ" date={date} sender="Thong"} */}
-    {/* SellerResponse({text: 'ยินดีค่ะ', date: '2022/11/09', sender: 'Thong'}) */}
-    <SellerResponse text="ถูกใจมาก" date={date} sender="Pond"/>
-    <SellerResponse text= 'ขอบคุณค่ะ' date={date} />
-    <SellerResponse text= 'ได้รับแล้ว'/>
-  </div>
-  );
+  function ResponseContainer(props) {
+    console.log(props);
+    return (
+    <div>
+      <SellerResponse text="ขอบคุณครับ" date="2022-11-19" />;
+      <SellerResponse text="ขอบคุณค่ะ" date="2022-11-19" />;
+    </div>  
+    )
+  }
+
+  // const date = '2022-11-24'
+  // const div = (
+  // <div>
+  //   <SellerResponse text="ยินดีค่ะ" date={date} sender="Thong"/> 
+  //   {/* props => {text="ยินดีค่ะ" date={date} sender="Thong"} */}
+  //   {/* SellerResponse({text: 'ยินดีค่ะ', date: '2022/11/09', sender: 'Thong'}) */}
+  //   <SellerResponse text="ขอบคุณมากค่ะ" date={date} sender="Pond"/>
+  //   <SellerResponse text= "โอกาสหน้าเชิญใหม่" date={date} />
+  //   <SellerResponse text= "Thank you"/>
+  // </div>
+  // );
+
+  const div = <ResponseContainer />;
   
   const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(div)
