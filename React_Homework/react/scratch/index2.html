@@ -28,12 +28,13 @@
       </div> 
       )};
 
+  const date = '2022-11-24'
   const div = (
   <div>
-    <SellerResponse text="ยินดีค่ะ" date="2022/11/09" sender="Thong"/>
+    <SellerResponse text="ยินดีค่ะ" date={date} sender="Thong"/> {/* props => {text="ยินดีค่ะ" date={date} sender="Thong"} */}
     {/* SellerResponse({text: 'ยินดีค่ะ', date: '2022/11/09', sender: 'Thong'}) */}
-    <SellerResponse text="ถูกใจมาก" date="2022/11/03" sender="Pond"/>
-    <SellerResponse text= 'ขอบคุณค่ะ' date= '2022/10/21'/>
+    <SellerResponse text="ถูกใจมาก" date={date} sender="Pond"/>
+    <SellerResponse text= 'ขอบคุณค่ะ' date={date} />
     <SellerResponse text= 'ได้รับแล้ว'/>
   </div>
   );
