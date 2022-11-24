@@ -17,26 +17,26 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="text/babel">
   
-  function SellerResponse(props) {
-    const { text, date, sender = 'by unknow' } = props;
-    return (
-      <div style={{ backgroundColor: '#ccc', padding: '1rem', margin: '1rem'}}>
-        <h6>Seller Response</h6>
-        <p>{text}</p>
-        <p>{date}</p>
-        <p>{sender}</p>
-      </div> 
-      )};
+  // function SellerResponse(props) {
+  //   const { text, date, sender = 'by unknow' } = props;
+  //   return (
+  //     <div style={{ backgroundColor: '#ccc', padding: '1rem', margin: '1rem'}}>
+  //       <h6>Seller Response</h6>
+  //       <p>{text}</p>
+  //       <p>{date}</p>
+  //       <p>{sender}</p>
+  //     </div> 
+  //     )};
 
-  function ResponseContainer(props) {
-    console.log(props);
-    return (
-    <div>
-      <SellerResponse text="ขอบคุณครับ" date="2022-11-19" />;
-      <SellerResponse text="ขอบคุณค่ะ" date="2022-11-19" />;
-    </div>  
-    )
-  }
+  // function ResponseContainer(props) {
+  //   console.log(props);
+  //   return (
+  //   <div>
+  //     <SellerResponse text="ขอบคุณครับ" date="2022-11-19" />;
+  //     <SellerResponse text="ขอบคุณค่ะ" date="2022-11-19" />;
+  //   </div>  
+  //   )
+  // }
 
   // const date = '2022-11-24'
   // const div = (
@@ -50,7 +50,45 @@
   // </div>
   // );
 
-  const div = <ResponseContainer />;
+  // const div = <ResponseContainer />;
+
+  function CommentUser(props) {
+    return (
+      <div className="comment-user">
+        <p>{props.user}</p>  
+        <p>{props.rating}</p>  
+        <p>{props.date}</p>
+      </div>
+    );
+  };
+
+  function CommentDetail(props) {
+    return (
+      <div className="comment-detail">
+        <span>{props.detail}</span>
+      </div>
+    );
+  };
+
+  function SellerResponse(props) {
+    return (
+      <div className="seller-response" style={{ backgroundColor: '#ccc', padding: '1rem', margin: '1rem'}}>
+        <h6>{props.message}</h6>
+      </div>
+    );
+  };
+  
+  function Comment(props) {
+    return (
+    <div>
+      <CommentUser user="User 1 Component" rating="Star Star Star" date="2022-11-24 20.18"/>
+      <CommentDetail detail="Very Good!!!" />
+      <SellerResponse message="Thank you very much"  />
+    </div>
+    );
+  };
+
+  const div = <Comment/>
   
   const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(div)
